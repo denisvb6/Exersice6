@@ -1,0 +1,59 @@
+@include font-face($font-base, 'fonts/OpenSans-Regular');
+@include font-face($font-headline, 'fonts/PlayfairDisplay-Bold', 700);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font-base;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 100px 100px 0px 200px;
+    margin: 0 auto;
+}
+
+.h1 {
+    font-family: $font-headline;
+    color: $body-color;
+    font-size: 3rem;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+}
+
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .contacts__form {
+       flex-direction: column;
+    }
+    .images {
+        flex-direction: row;
+    }
+    .container {
+        padding: 10px;
+        margin: 0 auto;
+    }
+}

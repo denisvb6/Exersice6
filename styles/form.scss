@@ -1,0 +1,30 @@
+.form__control {
+    padding: 0 2.25em;
+    border: 1px solid $form-control-placeholder;
+    font-family: $font-base;
+    font-size: .875rem;
+    line-height: 3.5rem;
+    width: 18.5rem;
+    background-color: $form-control-bg;
+    color: $form-control-color;
+    margin-right: 30px;
+    
+    &::placeholder {
+        color: $form-control-placeholder;
+    }
+}
+
+.message-form__control {
+    padding-left: 2.25em;
+    border: 1px solid $form-control-placeholder;
+    font-family: $font-base;
+    font-size: .875rem;
+    line-height: 9.1875rem;
+    width: 38.9375rem;
+    background-color: $form-control-bg;
+    color: $form-control-color;
+
+    &::placeholder {
+        color: $form-control-placeholder;
+    }
+}

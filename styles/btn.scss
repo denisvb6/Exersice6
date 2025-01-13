@@ -1,0 +1,14 @@
+.btn {
+    border: 0;
+    font-size: .875rem;
+    line-height: 3.55rem;
+    width: 11.1875rem;
+    font-weight: 400;
+    background-color: $btn-bg;
+    color: $btn-color;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .75;
+    }
+}
