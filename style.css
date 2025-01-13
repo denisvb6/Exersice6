@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), url("fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display"), url("fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  background-color: #13171b;
+  color: #E7E7E7;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 100px 100px 0px 200px;
+  margin: 0 auto;
+}
+
+.h1 {
+  font-family: "Playfair Display";
+  color: #E7E7E7;
+  font-size: 3rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  row-gap: 50px;
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .contacts__form {
+    flex-direction: column;
+  }
+  .images {
+    flex-direction: row;
+  }
+  .container {
+    padding: 10px;
+    margin: 0 auto;
+  }
+}
+.btn {
+  border: 0;
+  font-size: 0.875rem;
+  line-height: 3.55rem;
+  width: 11.1875rem;
+  font-weight: 400;
+  background-color: #3d4650;
+  color: #FFF;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.75;
+}
+
+.form__control {
+  padding: 0 2.25em;
+  border: 1px solid #BEBEBE;
+  font-family: "Open Sans";
+  font-size: 0.875rem;
+  line-height: 3.5rem;
+  width: 18.5rem;
+  background-color: #13171b;
+  color: #FFF;
+  margin-right: 30px;
+}
+.form__control::-moz-placeholder {
+  color: #BEBEBE;
+}
+.form__control::placeholder {
+  color: #BEBEBE;
+}
+
+.message-form__control {
+  padding-left: 2.25em;
+  border: 1px solid #BEBEBE;
+  font-family: "Open Sans";
+  font-size: 0.875rem;
+  line-height: 9.1875rem;
+  width: 38.9375rem;
+  background-color: #13171b;
+  color: #FFF;
+}
+.message-form__control::-moz-placeholder {
+  color: #BEBEBE;
+}
+.message-form__control::placeholder {
+  color: #BEBEBE;
+}
+
+.contacts__h1 {
+  font-size: 3.625rem;
+  width: 41.125rem;
+  margin: 0 0 0.56em;
+}
+
+.contacts__notice {
+  font-size: 1rem;
+  width: 38.6875rem;
+  margin: 0 0 2em;
+}
+
+.two-column__image1 {
+  margin-right: 3.825rem;
+  margin-top: 12.9rem;
+}
+
+.two-column__image2 {
+  align-self: flex-start;
+  margin-top: 4.925rem;
+}/*# sourceMappingURL=style.css.map */

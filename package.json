@@ -1,0 +1,11 @@
+{
+    "devDependencies": {
+        "cssnano": "^7.0.6",
+        "postcss": "^8.4.49",
+        "postcss-cli": "^11.0.0",
+        "postcss-cssnext": "^3.1.1"
+    },
+    "scripts": {
+        "postcss": "postcss style.scss --use postcss-cssnext --use cssnano --output minStyle.css"
+    }
+}
